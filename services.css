@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+nav{
+    background-color: rgba(16, 14, 14, 0.7);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px 0 0 100px;
+    letter-spacing: 2px;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 120px;
+    margin-top: 28px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    letter-spacing: 1px;
+}
+nav ul li a{
+    color: white;
+    font-weight: 20px;
+    font-weight: bold;
+    padding: 9px 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.pages.active, .pages:hover{
+    background-color: black;
+    color: white;
+    transition: 2s;
+}
+.menubtn{
+    font-size: 32px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+@media (max-width: 1127px) {
+    label.logo{
+        font-size: 30px;
+    }
+    nav ul li a{
+        font-size: 14px
+    }
+    footer h3{
+        font-size: 24px;
+    }
+}
+@media (max-width: 1090px) {
+    label.logo{
+        margin: 15px 0 0 40px;
+    }
+    nav ul{
+        margin-right: 40px;
+    }
+    footer h3{
+        font-size: 22px;
+    }
+}
+@media (max-width: 998px) {
+    footer h3{
+        font-size: 20px;
+    }
+    footer img{
+        height: 85px;
+    }
+    footer p, li{
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px) {
+    .menubtn{
+        display: block;
+    }
+    .unorderlist{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(16, 14, 14, 0.5);
+        top: 80px; 
+        left: -100%;
+        text-align: center;
+        transition: all .2s;
+    }
+    nav ul{
+        margin-top: 0;
+    }
+    nav ul li{
+        display: block;
+        color: white;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    .pages:hover, .pages.active{
+        background: black;
+        color: white;
+    }
+    #checkbox:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width: 843px) {
+    footer img{
+        height: 75px;
+    }
+    footer p, li{
+        font-size: 12px;
+    }   
+}
+@media (max-width: 805px) {
+    footer img{
+        height: 65px;
+    }
+    .item-1, .item-4{
+        width: 50%;
+    }
+    .item-2, .item-3{
+        width: 40%;
+    }
+    .item-3{
+        order: 1;
+        margin-left: -30px;
+    }
+    .item-4{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 545px) {
+    label.logo{
+        margin: 15px 0 0 40px;
+    }
+}
+@media (max-width: 461px) {
+    .foot-span{
+        display: none;
+    }   
+    .foot-span-2{
+        display: none;
+    }
+}
+@media (max-width:440px) {
+    label.logo{
+        font-size: 26px;
+        margin: 19px 0 0 30px;
+    }
+    .menubtn{
+        font-size: 28px;
+    }
+}
+.row-1 p{
+    text-align: justify;
+}
+
+.head::after{
+    background-color: black;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 20px auto;
+}
+
+.card-1{
+    background-color: whitesmoke;
+    width: 25%;
+}
+@media (max-width:1200px) {
+    .card-1{
+        width: 35%;
+    }
+}
+@media (max-width:998px) {
+    .card-1{
+        width: 40%;
+    }
+}
+@media (max-width:768px) {
+    .card-1{
+        width: 50%;
+    }
+}
+@media (max-width:464px) {
+    .card-1{
+        width: 70%;
+    }
+}
+@media (max-width:340px) {
+    .card-1{
+        width: 100%;
+    }
+}
+
+footer{
+    background-color: rgba(16, 14, 14, 0.9);
+    color: white;
+    list-style: none;
+    
+}
+footer h3{
+    word-spacing: 4px;
+}
+footer h3 p li a{
+    color: white;
+}
